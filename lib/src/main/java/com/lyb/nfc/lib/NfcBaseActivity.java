@@ -132,7 +132,12 @@ public abstract class NfcBaseActivity extends Activity {
             isoDep.setTimeout(5000);
             int timeout = isoDep.getTimeout();
             if (isoDep.isConnected()) {
-
+                //读取数据，示例
+                //发送指令，并接收卡的返回值
+                String cmdSelectMoney = "00A40400080000000000000001";
+                byte[] cmd = NfcDataUtils.hexToByteArray(cmdSelectMoney);
+                byte[] respone1 = isoDep.transceive(cmd);
+                String selectMoneyResult = NfcDataUtils.bytesToHexString(respone1);
             }
 
 
