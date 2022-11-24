@@ -1,0 +1,14 @@
+#忽略所有的.iml文件，此文件是用来保存开发工具信息
+*.iml
+#忽略根目录.gradle文件夹，此文件夹是用来保存gradle的依赖信息的
+/.gradle
+#忽略.idea文件夹，此文件夹是用来保存开发工具的设置信息
+/.idea
+.DS_Store
+#忽略build文件夹，此文件是用来保存编译后的文件目录
+/build
+/captures
+.externalNativeBuild
+.cxx
+#忽略local.properties文件，此文件是用来保存项目依赖信息
+local.properties
